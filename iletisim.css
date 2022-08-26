@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+body{
+    background-image:  url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+.menu-bar{
+    background-color: rgba(91, 113, 181, 0.8);
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar ul li {
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+}
+.active, .menu-bar ul li:hover{
+    background-color: #d4c995;
+    border-radius: 10px;
+}
+.menu-bar .fas{
+    margin-right: 5px;
+}
+.sub-menu{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: rgba(91, 113, 181, 0.8);
+    margin-top: 18px;
+    margin-left: -15px;
+    font-size: 15px;
+}
+.menu-bar ul li:hover .sub-menu ul{
+    display: block;
+}
+.menu-bar ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+    cursor: pointer;
+}
+.menu-bar ul li:hover .sub-menu ul li a:hover{
+    color: #e9ff92;
+}
+.fa-caret-right{
+    font-size: 14px;
+    color: #fff;
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: rgba(91, 113, 181, 0.8);
+}
+.center{
+    width: 100%;
+   height: 775px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logos{
+    margin-top: -400px;
+}
+.center ul li{
+    display: inline-block;
+    margin:  50px;
+}
+.birlesik{
+    width: 90px;
+    height: 90px;
+
+}
+#twit{
+    width: 100px;
+    height: 90px; 
+}
+
+#mail{
+    width: 100px;
+    height: 80px;
+
+}
+.birlesik:hover{
+    width: 110px;
+    height: 110px;
+    /*border-radius: 30px;
+    box-shadow: 0px 0px 10px 2px blueviolet;*/
+    transition: .5s;
+   
+}
+#twit:hover{
+    width:120px;
+    height: 110px;
+   /* box-shadow: 0px 0px 10px 2px blueviolet;*/
+    background: rgba(0, 0, 0, 0);
+    transition: .5s;
+}
+#mail:hover{
+    width: 120px;
+    height: 100px;
+    transition: .5s;
+}
+.logos{
+    display: block;
+}
+.kutu{
+    text-align: center;
+
+    height: 130px;
+    color: #fff;
+}
+.kutu:hover{
+    font-size: 30px;
+
+    transition: .5s;
+}
+h3{
+    width: 200px;
+    border-radius: 10px;
+}
+h3:hover{
+    box-shadow: 0px 0px 10px 0px #fff;
+}
+.footer{
+    background-color: rgba(91, 113, 181, 0.8);
+    width: 100%;
+    height: 101px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    
+}
+.altt{
+    text-align: center;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #fff;
+}
+h4{
+    text-align: center;
+    width: 500px;
+    border-radius: 20px;
+}
